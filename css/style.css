@@ -8,8 +8,27 @@ body{
   padding: 0;
   scroll-behavior: smooth;
   color: #012A4A;
+  overflow: overlay;
   overflow-x: hidden;
   font-family: 'Open Sans', sans-serif;
+
+}
+
+::-webkit-scrollbar{
+  background: transparent;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #0B446F;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-corner {
+  border-radius: 10px;
+  background: #0B446F;
+}
+::-webkit-scrollbar:hover {
+  background-color: transparent;
+  width: 10px;
 }
 
 /* ----------------------------------------------------------------------------------- */
@@ -113,7 +132,7 @@ header {
 /* Slider */
 .slider-container {
   width: 100%;
-  height: 500px;
+  height: 450px;
   border: 2px solid steelblue;
   overflow: hidden;
 }
@@ -149,8 +168,8 @@ header {
 /* ----------------------------------------------------------------------------------- */
 /* Products */
 .product-container {
-  margin: 1em;
-  padding: 1em 1.5em;
+  margin: 0.5em;
+  padding: 1em;
   /* color: #F2F2F2;
   background-color: #012A4A; */
 }
@@ -159,11 +178,21 @@ header {
   margin: 1rem;
 }
 
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.covid-care, .diabetes-care {
+  margin-top: 4em;
+}
+
 .product {
   display: inline-block;
-  width: 20%;
-  padding: 1.2rem;
-  margin: 1rem;
+  width: 18%;
+  padding: 1.2em;
+  margin: 1em;
   -webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
@@ -175,8 +204,10 @@ header {
 
 .product img {
   display: flex;
-  width: 300px;
-  height: 200px;
+  /* width: 300px;
+  height: 200px; */
+  width: 17vw;
+  height: 20vh;
 }
 
 .product a {
@@ -211,16 +242,54 @@ footer {
   padding: 1rem;
   font-size: large;
   text-align: center;
+  margin-top: 4em;
 }
 
-@media screen and (max-width: 900px) {
+/* ----------------------------------------------------------------------------------- */
+/* @media Rule */
+@media screen and (max-width: 1024px) {
+  .slider-container {
+    height: 300px;
+  }
+  .product-container {
+    padding: 0em ;
+  }
   .product {
-    width: 40%;
+    width: 15vw;
+    min-height: 40vh;
+    
+  }
+  .product img {
+    width: 15vw;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .slider-container {
+    height: 200px;
+  }
+  .row {
+    display: inline-block;
+  }
+  .product {
+    width: 30vw;
+    min-height: 40vh;
+  }
+  .product img {
+    width: 28vw;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
+  .slider-container {
+    height: 100px;
+  }
   .product {
-    width: 90%;
+    width: 80%;
+  }
+
+  .product img {
+    width: 66vw;
   }
 }
