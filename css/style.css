@@ -167,14 +167,16 @@ header {
 
 /* ----------------------------------------------------------------------------------- */
 /* Products */
-.product-container {
+.product-container,
+.lab-test-container {
   margin: 0.5em;
   padding: 1em;
   /* color: #F2F2F2;
   background-color: #012A4A; */
 }
 
-.product-container h2 {
+.product-container h2,
+.lab-test-container h2 {
   margin: 1rem;
 }
 
@@ -235,6 +237,82 @@ header {
 }
 
 /* ----------------------------------------------------------------------------------- */
+/* Lab-Test */
+/* label {
+  font-weight: bold;
+} */
+.form-container {
+  margin: 1em 5em;
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+}
+
+.form-details {
+  padding: 2em 0em 1em 4em;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+label[for="district"] {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+select {
+  border: none;
+  border-bottom: 2px solid #0073a0;
+  padding: 5px 10px;
+  margin: 10px 3px;
+  outline: none;
+  background: transparent;
+}
+
+input[type=text], input[type=email], input[type=date], input[type=time]{
+  border: none;
+  border-bottom: 2px solid #0073a0;
+  padding: 5px 10px;
+  margin: 10px 3px;
+  background: transparent;
+  /* width: 100%; */
+  
+}
+input[type=text]:focus, input[type=email]:focus, input[type=date]:focus, input[type=time]:focus {
+  border: none;
+  border-bottom: 2px solid #01384e;
+  outline: none;
+  /* background: transparent; */
+}
+
+.form-image {
+  margin-bottom: -5px;
+  overflow: hidden;
+}
+
+.btn {
+  background-color: #0062b3; /* Green */
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #0073a0;
+}
+
+/* ----------------------------------------------------------------------------------- */
 /* Footer */
 footer {
   color: #F2F2F2;
@@ -257,12 +335,23 @@ footer {
   .product {
     width: 15vw;
     min-height: 40vh;
-    
   }
   .product img {
     width: 15vw;
   }
-  
+  .form-details {
+    padding: 1em;
+    background-color: rgba(242, 242, 242, 0.8);
+    margin-left: 5em;
+  }
+  .form-image {
+    display: none;
+  }
+  .form-container {
+    background-image: url("/images/Lab-Test/lab-test.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -279,6 +368,13 @@ footer {
   .product img {
     width: 28vw;
   }
+  .form-details {
+    margin-left: 1.5em;
+  }
+  .form-container {
+    margin: 1em;
+    width: 80vw;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -292,4 +388,11 @@ footer {
   .product img {
     width: 66vw;
   }
+  .form-row {
+    display: block;
+  }
+  .form-details {
+    margin-left: 0;
+  }
+
 }
