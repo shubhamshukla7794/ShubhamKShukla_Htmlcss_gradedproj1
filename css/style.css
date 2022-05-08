@@ -229,10 +229,12 @@ header {
   font-weight: bold;
 } */
 .form-container {
-  margin: 1em 5em;
-  -webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+	margin: 1em 5em;
+  height: 550px;
+	overflow: auto;
+	-webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
 }
 
 .form-details {
@@ -281,8 +283,20 @@ input[type=text]:focus, input[type=email]:focus, input[type=date]:focus, input[t
   overflow: hidden;
 }
 
+.form-image > img:nth-child(1) {
+  height: 550px;
+  width: 40vw;
+  position: absolute;
+  left: 53.5vw;
+}
+
+.submit-row {
+  margin-top: 36px;
+  margin-left: 20vw;
+ }
+
 .btn {
-  background-color: deeppink; /* Green */
+  background-color: mediumpurple;
   border: none;
   border-radius: 3px;
   color: whitesmoke;
@@ -292,11 +306,12 @@ input[type=text]:focus, input[type=email]:focus, input[type=date]:focus, input[t
   display: inline-block;
   font-size: 16px;
   font-weight: bold;
+  margin-left: 50px;
 }
 
 .btn:hover {
   cursor: pointer;
-  background-color: hotpink;
+  background-color: slateblue;
 }
 
 /* ----------------------------------------------------------------------------------- */
@@ -307,7 +322,7 @@ footer {
   padding: 1rem;
   font-size: large;
   text-align: center;
-  margin-top: 4em;
+  margin-top: 2em;
 }
 
 /* ----------------------------------------------------------------------------------- */

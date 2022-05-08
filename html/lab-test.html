@@ -43,98 +43,98 @@
     <section id="lab-test-section">
         <div class="lab-test-container">
             <h2>Lab Test</h2>
+            <form action="">
             <div class="form-container">
                 <div class="form-row form-md-scrn">
                     <div class="form-details">
-                        <form action="">
-                            <ol>
-                                <li>
-                                    <h3>Your Contact Details</h3>
-                                    <div class="form-row">
-                                        <input type="text" placeholder="Full Name" title="Please enter your full name" pattern="[a-zA-Z ]{3,50}" required>
-                                        <input type="text" placeholder="Patient Id if exists">
-                                    </div>
-                                    <div class="form-row">
-                                        <input type="text" placeholder="Contact Number" title="Contact number usually starts with 7-9 and must be 10 numbers" pattern="[7-9]{1}[0-9]{9}" required>
-                                        <input type="email" placeholder="Email Id" title="Please enter your Email Id" required>
-                                    </div>
-                                </li>
-                                <li>
-                                    <h3>Address</h3>
-                                    <div class="form-row">
-                                        <input type="text" placeholder="H-No" title="Please enter your House Number" pattern="[a-zA-Z0-9.-/ ]{3,250}" required>
-                                        <input type="text" placeholder="Street" title="Please enter your Street" pattern="[a-zA-Z0-9.- ]{3,250}" required>
+                        <ol>
+                            <li>
+                                <h3>Your Contact Details</h3>
+                                <div class="form-row">
+                                    <input type="text" placeholder="Full Name" title="Please enter your full name" pattern="[a-zA-Z ]{3,50}" required>
+                                    <input type="text" placeholder="Patient Id if exists">
+                                </div>
+                                <div class="form-row">
+                                    <input type="text" placeholder="Contact Number" title="Contact number usually starts with 7-9 and must be 10 numbers" pattern="[7-9]{1}[0-9]{9}" required>
+                                    <input type="email" placeholder="Email Id" title="Please enter your Email Id" required>
+                                </div>
+                            </li>
+                            <li>
+                                <h3>Address</h3>
+                                <div class="form-row">
+                                    <input type="text" placeholder="H-No" title="Please enter your House Number" pattern="[a-zA-Z0-9.-/ ]{3,250}" required>
+                                    <input type="text" placeholder="Street" title="Please enter your Street" pattern="[a-zA-Z0-9.- ]{3,250}" required>
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Area" title="Please enter your Area" pattern="[a-zA-Z0-9.-/ ]{3,250}" required>
+                                </div=>
+                                <div>         
+                                    <label for="district">District</label>
+                                    <select id="district" name="district" title="Please select your District" required>
+                                        <option value="">Choose</option>
+                                        <option value="Mumbai City">Mumbai City</option>
+                                        <option value="Mumbai Suburban">Mumbai Suburban</option>
+                                        <option value="Navi Mumbai">Navi Mumbai</option>
+                                        <option value="Thane">Thane</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <h3>Choose the Test Type</h3>
+                                <p><em>Check at least one box without fail</em></p>
+                                <input type="checkbox" id="cbc" value="CBC">
+                                <label for="cbc">CBC</label>
+                                <br>
+                                <input type="checkbox" id="cu" value="Complete_Urine">
+                                <label for="cu">Complete Urine</label>
+                                <br>
+                                <input type="checkbox" id="lp" value="Lipid_Profile">
+                                <label for="lp">Lipid Profile</label>
+                                <br>
+                                <input type="checkbox" id="tsh" value="Thyroid_Stimulating_Hormone">
+                                <label for="tsh">Thyroid Stimulating Hormone(TSH)</label>
+                                <br>
+                                <input type="checkbox" id="gt" value="Glucose_Test">
+                                <label for="gt">Glucose Test</label>
+                            </li>
+                            <li>
+                                <h3>Do you want hard copy of the result?</h3>
+                                <div class="row">
+                                    <div>
+                                        <input type="radio" id="yes" name="isHardCopy" value="yes" required>
+                                        <label for="yes">Yes</label>
                                     </div>
                                     <div>
-                                        <input type="text" placeholder="Area" title="Please enter your Area" pattern="[a-zA-Z0-9.-/ ]{3,250}" required>
-                                    </div=>
-                                    <div>         
-                                        <label for="district">District</label>
-                                        <select id="district" name="district" title="Please select your District" required>
-                                            <option value="">Choose</option>
-                                            <option value="Mumbai City">Mumbai City</option>
-                                            <option value="Mumbai Suburban">Mumbai Suburban</option>
-                                            <option value="Navi Mumbai">Navi Mumbai</option>
-                                            <option value="Thane">Thane</option>
-                                        </select>
+                                        <input type="radio" id="no" name="isHardCopy" value="no">
+                                        <label for="no">No</label>
                                     </div>
-                                </li>
-                                <li>
-                                    <h3>Choose the Test Type</h3>
-                                    <p><em>Check at least one box without fail</em></p>
-                                    <input type="checkbox" id="cbc" value="CBC">
-                                    <label for="cbc">CBC</label>
-                                    <br>
-                                    <input type="checkbox" id="cu" value="Complete_Urine">
-                                    <label for="cu">Complete Urine</label>
-                                    <br>
-                                    <input type="checkbox" id="lp" value="Lipid_Profile">
-                                    <label for="lp">Lipid Profile</label>
-                                    <br>
-                                    <input type="checkbox" id="tsh" value="Thyroid_Stimulating_Hormone">
-                                    <label for="tsh">Thyroid Stimulating Hormone(TSH)</label>
-                                    <br>
-                                    <input type="checkbox" id="gt" value="Glucose_Test">
-                                    <label for="gt">Glucose Test</label>
-                                </li>
-                                <li>
-                                    <h3>Do you want hard copy of the result?</h3>
-                                    <div class="row">
-                                        <div>
-                                            <input type="radio" id="yes" name="isHardCopy" value="yes" required>
-                                            <label for="yes">Yes</label>
-                                        </div>
-                                        <div>
-                                            <input type="radio" id="no" name="isHardCopy" value="no">
-                                            <label for="no">No</label>
-                                        </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h3>Select Your Comfortable Date and Time</h3>
+                                <div class="form-row">
+                                    <div>
+                                        <label for="appt_date">Date</label>
+                                        <input type="date" id="appt_date" name="appt_date" title="Please select Appointment Date" required>
                                     </div>
-                                </li>
-                                <li>
-                                    <h3>Select Your Comfortable Date and Time</h3>
-                                    <div class="form-row">
-                                        <div>
-                                            <label for="appt_date">Date</label>
-                                            <input type="date" id="appt_date" name="appt_date" title="Please select Appointment Date" required>
-                                        </div>
-                                        <div>
-                                            <label for="appt_time">Time</label>
-                                            <input type="time" id="appt_time" name="appt_time" min="09:00" max="18:00" title="Please select Appointment Time" required>
-                                        </div>
+                                    <div>
+                                        <label for="appt_time">Time</label>
+                                        <input type="time" id="appt_time" name="appt_time" min="09:00" max="18:00" title="Please select Appointment Time" required>
                                     </div>
-                                </li>
-                            </ol>
-                            <div class="row">
-                                <button class="btn" type="submit">Submit</button>
-                                <button class="btn" type="reset">Reset</button>
-                            </div>
-                        </form>
+                                </div>
+                            </li>
+                        </ol>
                     </div>
                     <div class="form-image">
                         <img src="../images/Lab-Test/lab-test.jpg" alt="Lab Test image">
                     </div>
                 </div>
             </div>
+            <div class="submit-row">
+                <button class="btn" type="reset">Reset</button>
+                <button class="btn" type="submit">Submit</button>                
+            </div>
+            </form>
         </div>
     </section>
 
