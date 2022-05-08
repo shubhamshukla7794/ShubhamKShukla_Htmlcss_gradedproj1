@@ -22,7 +22,9 @@ https://user-images.githubusercontent.com/37581959/167287559-53503c71-03a2-4650-
 
 The following video shows the responsiveness of the webpages for Pharmacy
 
-https://user-images.githubusercontent.com/37581959/167284112-9a12a153-c80c-4644-a1ab-bcee84c9f7a6.mp4
+https://user-images.githubusercontent.com/37581959/167288802-6cc5e420-54ba-42f8-a6ec-6d631e19d096.mp4
+
+
 
 ##  Author
 
