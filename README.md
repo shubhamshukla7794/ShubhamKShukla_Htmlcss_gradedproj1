@@ -16,7 +16,7 @@ This repo contains the project **Great Learning Front End Graded Coding Assignme
 ## Application
 The following video shows the webpages for Pharmacy
 
-https://user-images.githubusercontent.com/37581959/167284108-743c90e8-7872-42ac-a921-d86e2b274df1.mp4
+https://user-images.githubusercontent.com/37581959/167287559-53503c71-03a2-4650-8829-aafbc214e5a7.mp4
 
 
 
